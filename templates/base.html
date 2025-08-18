@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/basestyle.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/skill.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/certificate.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/home.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/about.css' ) }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo"><a href="/">Portfolio</a></div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/project">Projects</a></li>
+            <li><a href="/skill">Skills</a></li>
+            <li><a href="/certificate">Certificates</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+   </header>
+
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>        
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <p>&copy;  Divyank Kadam | All rights reserved.</p>
+        <div class="footer-socials">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="mailto:your@email.com">Email</a>
+        </div>
+    </div>
+    </footer>
+
+
+</body>
+</html>

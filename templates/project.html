@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    contact
+{% endblock %}
+
+{% block content %}
+
+
+<div class="project">
+  <div class="project-image">
+    <img src="{{ url_for('static', filename='images/reelgenerator.png') }}" alt="Project Image">
+  </div>
+  <div class="project-content">
+    <h2 class="project-title">VideoSnapAI</h2> 
+    <p>  &#8209; Developed a flask-based web app that converts uploaded images sequences into Al generated reel.</p>
+    <br>
+    <p>  &#8209; Implemented secure file handling using Flask, uuid , and werkzeug with automated description & metadata storage.</p>
+    <br>
+    <p>  &#8209; Enhanced user experience by enabling seamless reel creation and providing a gallery to view generated videos.</p>
+  </div>
+</div>
+
+<div class="project">
+  <div class="project-image">
+    <img src="{{ url_for('static', filename='images/house_price_prediction.webp') }}" alt="Project Image">
+  </div>
+  <div class="project-content">
+    <h2 class="project-title">House Price Prediction Model</h2>
+    <p>  &#8209; Built a machine learning model to predict median house prices using real-estate dataset features.</p>
+    <br>
+    <p>  &#8209; Preprocessed data with pipelines (imputation, scaling, and one-hot encoding) and trained Linear Regression, Decision Tree, and Random Forest models using Scikit-learn.</p>
+    <br>
+    <p>  &#8209; Achieved reliable predictions with Random Forest, reducing RMSE significantly through cross-validation and hyperparameter tuning.</p>
+  </div>
+</div>
+
+
+{% endblock %}

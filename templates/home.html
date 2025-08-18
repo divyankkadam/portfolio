@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block content %}
+
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Divyank Kadam</h1>
+    <p>A passionate B.Tech CSE student, aspiring full-stack developer & future data scientist.</p>
+
+    <div class="hero-buttons">
+      <a href="/" class="btn">Contact Me</a>
+      <a href="{{ url_for('static', filename='divyank_kadam_resume.pdf') }}" class="btn" download>Download Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Divyank Kadam">
+  </div>
+</section>
+
+
+{% endblock %}
+

@@ -1,0 +1,102 @@
+
+.about-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+
+
+
+.about-text {
+  flex: 2;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  list-style: disc inside;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-text a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+.about-text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 180px;
+  }
+
+  .about-text h3 {
+    text-align: center;
+  }
+
+  .about-text ul {
+    text-align: left;
+    list-style-position: inside;
+  }
+}
+
+
+.fade-in {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

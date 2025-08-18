@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    certificate
+{% endblock %}
+
+{% block content %}
+
+
+<div class="certificate-grid">
+
+  <div class="certificate-card">
+    <img src="{{ url_for('static', filename='images/reelgenerator.png') }}" alt="Project Image">
+    <h2>Python for Beginners</h2>
+    <a href="{{ url_for('static', filename='certificates/cert1.png') }}" target="_blank">View</a>
+  </div>
+
+  <div class="certificate-card">
+    <img src="{{ url_for('static', filename='images/certificate.png') }}" alt="Certificate 2">
+    <h2>Web Development Bootcamp</h2>
+    <a href="{{ url_for('static', filename='certificates/cert2.png') }}" target="_blank">View</a>
+  </div>
+
+
+
+</div>
+{% endblock %}
+
+
